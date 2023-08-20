@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>transform</title>
     <style>
-        .box{
-            width: 100px;
-            height: 100px;
+        .box,.inner{
+            width: 200px;
+            height: 200px;
             border: 2px solid rgb(56, 199, 13);
             border-radius: 5px;
+        
         }
+        .box{
+            background-color: rgb(56, 13, 134);
+        }
+        .inner{
+            background-color: aqua;
+            transform: translate(30px) scale(0.75) rotate(45deg)  translatey(60px);
+
+        }
+        
     </style>
 </head>
 <body>
