@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ANIMation</title>
+    <style>
+        @keyframes sliding {
+            0%{
+background-color: #19ca09;
+left: 0; top:0; 
+            }
+
+            25%{
+                top:200px;
+            }
+             
+            50%{
+                top:0;
+            }
+             
+            75%{
+                top:200px;
+            }
+            to {
+background-color: #6d083a;
+left:520px;
+top:0;
+
+            }
+        }
+        @keyframes sliding2 {
+            from{
+background-color: #c4d10d;
+left: 0; 
+            }
+           
+            to {
+background-color: #320685;
+left:400px;
+            }
+        }
+        .stage{
+            width: 600px;
+            height: 300px;
+            background-color: rgb(177, 187, 187);
+            
+        }
+        .ball{
+width:100px;
+height: 100px;
+background-color: #0aac32;
+border-radius: 50%;
+animation:sliding 1s ease-in-out 1s 20 alternate ;  
+animation-play-state:running ;
+position: relative;
+        } 
+        .ball2{
+width:100px;
+height: 100px;
+background-color: #0aac32;
+border-radius: 50%;
+
+animation:sliding2 1s ease-in-out 0.5s 20 alternate ; 
+animation-play-state:running ;
+position: relative;
+        } 
+    </style>
+</head>
+<body>
+    <h1>animation</h1> 
+   <div class="stage">
+    <div class="ball"></div>
+    <div class="ball2"></div>
+   </div>
+</body>
+</html>
